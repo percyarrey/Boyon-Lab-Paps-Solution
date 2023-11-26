@@ -1,0 +1,174 @@
+:root {
+  --primary-text: rgb(0, 25, 36);
+  --primary-bg: #F3F8F9;
+  --secondary-text: #0DCAF0 ;
+  --secondary-bg: white;
+  --btn-shadow: rgba(5, 3, 3, 0.271);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--primary-text);
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* BUTTON */
+.x-btn {
+  background-color: var(--secondary-text);
+  color: white;
+  transition: all 0.3s ease;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--secondary-text);
+  box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow);
+  text-decoration: none;
+}
+
+.x-btn:hover {
+  background-color:rgb(26, 213, 242) ;
+  border: 1px solid var(--secondary-text);
+  box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow);
+  color: white;
+}
+
+.x-btn:focus {
+  background-color: var(--secondary-text);
+  border: 1px solid var(--secondary-text);
+  box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow);
+  border-radius: 4%;
+  color: white;
+}
+
+.x-btn:active {
+  background-color: var(--secondary-text) !important;
+  border: 1px solid var(--secondary-text) !important;
+  box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow) !important;
+  border-radius: 4% !important;
+  color: white !important;
+}
+
+.x-btn-outline {
+  transition: all 0.3s ease;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--secondary-text);
+  color: var(--secondary-text);
+  box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow);
+  text-decoration: none;
+}
+
+.x-btn-outline:hover {
+  background-color: var(--secondary-text);
+  border: 1px solid var(--secondary-text);
+  box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow);
+  border-radius: 4%;
+  color: white !important;
+}
+
+.x-btn-outline:focus {
+  transition: all 0.3s ease;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--secondary-text);
+  color: var(--secondary-text);
+  box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow);
+  text-decoration: none;
+}
+
+.x-btn-outline:active {
+  border: 1px solid var(--secondary-text) !important;
+  color: var(--secondary-text) !important;
+  box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow) !important;
+  border-radius: 4% !important;
+}
