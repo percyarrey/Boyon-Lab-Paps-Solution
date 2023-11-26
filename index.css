@@ -1,7 +1,7 @@
 :root {
   --primary-text: #243f6a !important;
   --primary-bg: white !important;
-  --secondary-text: #0DCAF0 !important;
+  --secondary-text: #0096AB !important;
   --secondary-bg: #f6f5f57b !important;
 }
 
@@ -595,59 +595,67 @@ body {
 
 
 /*! PRODUCT AND FEATURE */
+
 .product-section {
-  padding: 6rem 0rem;
+  padding-bottom: 4rem;
 }
 
-.product-section .product-card {
-  position: relative;
-  border: 1px solid #243f6a6b;
-  padding: 1.5rem 3rem;
-  margin: 0rem 2.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.product-section .product-card:hover {
+.product-section .carousel-item {
+  min-height: 30rem;
   color: white;
-  background: linear-gradient(to top right, var(--primary-text), var(--secondary-text));
+  /* Set the text color to white */
+  opacity: 0.8;
+  /* Adjust the opacity to make the text more visible */
+  padding: 10px;
+  /* Add padding for better visibility */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
 }
 
-.product-section .product-card:hover .product-logo {
-  color: white;
-}
-
-.product-section .product-card i {
-  color: var(--secondary-text);
-}
-
-/*  color: white;
- background: linear-gradient(to top right, var(--primary-text), var(--secondary-text)); */
-
-
-.product-section .product-card ul li {
-  margin-top: 0.7rem;
-}
-
-.product-section .product-card .product-logo {
+.product-section .carousel-indicators {
+  all: unset;
   position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 4rem;
-  transition: all 0.3s ease;
+  top: -3.5rem;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  width: 100%;
 }
 
-@media (max-width:576px) {
-  .product-section .product-card {
-    padding-right: 3rem;
-    margin: 0rem 1rem;
+.product-section .carousel-indicators li {
+  all: unset;
+  padding: 0.4rem 1rem;
+  background-color: rgb(227, 227, 227);
+  cursor: pointer;
+}
+
+.product-section .carousel-indicators .active {
+  background-color: var(--secondary-text);
+  color: white;
+}
+
+.product-section .carousel-control-next-icon {
+  animation: bounce 1s infinite;
+}
+
+.product-section .fa-chevron-right{
+  animation: trendIconAnim 3s ease infinite;
+}
+
+
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateX(-10px);
   }
 
+  50% {
+    transform: translateX(10px);
+  }
 }
 
-.product-section .product-card .fa-chevron-right {
-  animation: heroIconAnim 0.9s ease infinite;
-}
 
 
 /* GET STARTED */

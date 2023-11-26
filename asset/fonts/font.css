@@ -1,10 +1,10 @@
 :root {
-  --primary-text: rgb(0, 25, 36);
-  --primary-bg: #F3F8F9;
-  --secondary-text: #0DCAF0 ;
-  --secondary-bg: white;
-  --btn-shadow: rgba(5, 3, 3, 0.271);
+  --primary-text: #243f6a !important;
+  --primary-bg: white !important;
+  --secondary-text: #0096AB !important;
+  --secondary-bg: #f6f5f57b !important;
 }
+
 
 @font-face {
   font-family: 'Roboto';
@@ -116,7 +116,7 @@ h1 {
 }
 
 .x-btn:hover {
-  background-color:rgb(26, 213, 242) ;
+  background-color:var(--secondary-text) ;
   border: 1px solid var(--secondary-text);
   box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow);
   color: white;
@@ -126,7 +126,6 @@ h1 {
   background-color: var(--secondary-text);
   border: 1px solid var(--secondary-text);
   box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow);
-  border-radius: 4%;
   color: white;
 }
 
@@ -134,7 +133,6 @@ h1 {
   background-color: var(--secondary-text) !important;
   border: 1px solid var(--secondary-text) !important;
   box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow) !important;
-  border-radius: 4% !important;
   color: white !important;
 }
 
@@ -152,7 +150,6 @@ h1 {
   background-color: var(--secondary-text);
   border: 1px solid var(--secondary-text);
   box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow);
-  border-radius: 4%;
   color: white !important;
 }
 
@@ -170,5 +167,4 @@ h1 {
   border: 1px solid var(--secondary-text) !important;
   color: var(--secondary-text) !important;
   box-shadow: -0.1rem 0.1rem 0.2rem 0rem var(--btn-shadow) !important;
-  border-radius: 4% !important;
 }
